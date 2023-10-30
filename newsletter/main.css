@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bodyDiv{
+    @apply flex flex-col bg-[#36384D] items-center justify-center h-screen;
+}
