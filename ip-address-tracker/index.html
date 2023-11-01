@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily:
+        {
+          'rubik': ['Rubik']
+        },
+        fontStyle: {
+          italic: 'italic'
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Body Div -->
+  <div class="flex flex-col h-screen font-rubik">
+    <!-- Top Div -->
+    <div class="flex flex-col bg-[url('./images/pattern-bg-desktop.png')] w-full h-[30%] justify-center items-center space-y-5 pt-20 bg-cover">
+      <p class="text-white font-bold text-2xl">IP Address Tracker</p>
+      <div class="flex flex-row w-[40%]">
+        <input class="rounded-l-xl w-full px-3" placeholder="Search for any IP address or domain" type="text" name="" id="">
+        <span class="bg-black p-5 rounded-r-xl"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></span>
+      </div>
+      <div class="relative top-7 shadow-xl z-50 flex items-center justify-start w-[80%] bg-white rounded-xl py-8">
+        <div class="flex flex-col md:pr-10 md:pl-5 space-y-3 border-r  border-gray-200">
+          <p class="font-thin text-[10px] text-gray-500 ">IP ADDRESS</p>
+          <p class="font-medium text-black text-lg">192.212.174.101</p>
+        </div>
+        <div class="flex flex-col md:pr-10 md:pl-2 space-y-3 border-r border-gray-200">
+          <p class="font-normal text-[10px] text-gray-500">LOCATION</p>
+          <p class="font-medium text-black text-lg">Brooklyn, NY 10001</p>
+        </div>
+        <div class="flex flex-col md:pr-10 md:pl-2 space-y-3 border-r border-gray-200">
+          <p class="font-normal text-[10px] text-gray-500">TIMEZONE</p>
+          <p class="font-medium text-black text-lg">UTC -05:00</p>
+        </div>
+        <div class="flex flex-col md:pr-10 md:pl-2 space-y-3">
+          <p class="font-normal text-[10px] text-gray-500">ISP</p>
+          <p class="font-medium text-black text-lg">SpaceX Starlink</p>
+        </div>
+      </div>
+    </div>
+    <!-- Map Div -->
+    <div class=" w-full h-[60%]">
+      <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13717.441117017512!2d4.885076644453884!3d6.755135455887845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1698764001645!5m2!1sen!2sng" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC <!-- add offset value dynamically using the API -->
+  ISP
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
